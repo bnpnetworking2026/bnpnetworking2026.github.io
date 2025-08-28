@@ -1,64 +1,48 @@
 # BNP 2026 Networking Workshop
 
-🌏 **4th Bayesian Nonparametrics Networking Workshop**  
-📅 July 6-10, 2026  
-📍 University of Seoul, Seoul, South Korea
+## 🎯 Project Overview
 
-## About the Workshop
+Official website for the **4th Bayesian Nonparametrics Networking Workshop** to be held at the University of Seoul from Monday, July 6 to Friday, July 10, 2026.
 
-The University of Seoul invites you to attend the 4th BNP Networking Workshop, to be held at the University of Seoul (Centennial Memorial Hall) from July 6 (MON) to July 10 (FRI), 2026.
+## 📅 Event Information
 
-The Bayesian Nonparametric Networking Workshop has been held biennially since its inaugural event in 2022 in Cyprus. This workshop aims to:
+- **Date**: July 6 (Monday) - July 10 (Friday), 2026
+- **Venue**: University of Seoul Centennial Memorial Hall
+- **Address**: 163, Seoulsiripdae-ro, Dongdaemun-gu, Seoul, Republic of Korea
+- **Contact**: bnp.seoul.2026@gmail.com
 
-- ✅ Provide a flexible schedule with dedicated slots for early-career researchers
-- ✅ Establish and strengthen local networks while broadening the appeal of BNP  
-- ✅ Foster brainstorming and innovation
+## 🎯 Workshop Goals
 
-## Workshop Details
+The Bayesian Nonparametric Networking Workshop has been held biennially since its inaugural event in 2022 in Cyprus. The BNP Section launched this series to create smaller, informal gatherings with the following goals:
 
-**Venue:** UOS Centennial Memorial Hall  
-**Address:** 163, Seoulsiripdae-ro, Dongdaemun-gu, Seoul, Republic of Korea  
-**Email:** bnp.seoul.2026@gmail.com
+- ✅ To provide a flexible schedule with dedicated slots for early-career researchers
+- ✅ To establish and strengthen local networks while broadening the appeal of BNP
+- ✅ To foster brainstorming and innovation
 
-## Organizing Committee
+## 👥 Organizing Committees
 
-**Chair:** Joungyoun Kim (University of Seoul)
+### Local Organizing Committee
+- **Chair**: Joungyoun Kim (University of Seoul)
+- **Member**: Minwoo Chae (POSTECH)
+- **Member**: Juhee Lee (University of California, Santa Cruz)
+- **Member**: Gyuhyeong Goh (Kyungpook National University)
+- **Member**: Jong-June Jeon (University of Seoul)
 
-**Members:**
-- Minwoo Chae (POSTECH)
-- Juhee Lee (University of California, Santa Cruz)
-- Gyuhyeong Goh (Kyungpook National University)
-- Jong-June Jeon (University of Seoul)
+### Scientific Committee
+- **Chair**: Long Nguyen (University of Michigan)
+- **Member**: Cecilia Balocchi (University of Edinburgh)
+- **Member**: Xenia Miscouridou (University of Cyprus, Imperial College London)
+- **Member**: Federico Camerlenghi (University of Milano-Bicocca)
+- **Member**: Botond Szabo (Bocconi University)
+- **Member**: Yanxun Xu (Johns Hopkins University)
+- **Member**: Andrea Cremaschi (IE University)
+- **Member**: Weining Shen (University of California, Irvine)
+- **Member**: Juho Lee (Korea Advanced Institute of Science and Technology)
+- **Member**: Minwoo Chae (Pohang University of Science and Technology)
 
-## Scientific Committee
 
-**Chair:** Long Nguyen (University of Michigan)
+## 🤝 Co-hosted By
 
-**Members:**
-- Minwoo Chae (POSTECH)
-- Juho Lee (KAIST)
-- Andrea Cremaschi (IE University, Madrid)
-- Weining Shen (UCI)
-
-## Registration
-
-Registration fees will be announced soon. Categories include:
-- ISBA Student
-- Non-ISBA Student
-- ISBA Member
-- Non-ISBA Member
-
-Early bird, regular, and late registration periods will be available.
-
-## Website
-
-Visit our workshop website: [GitHub Pages URL]
-
-## Co-hosts
-
-- [Korean Statistical Society (KSS)](https://eng.kss.or.kr)
-- [BNP-ISBA](https://bnp-isba.github.io)
-
----
-
-*Copyright Gyeongmin Park(KNU) All Rights Reserved*
+This workshop is co-hosted by:
+- **Korean Statistical Society (KSS)**
+- **Nonparametrics Section of International Society of Bayesian Analysis (ISBA)**
