@@ -1547,6 +1547,15 @@ section,
   bottom: 15px;
 }
 
+/* 모바일에서 팀 멤버 카드 2열로 표시 */
+@media (max-width: 767px) {
+  .team .col-lg-3,
+  .team .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
 /*--------------------------------------------------------------
 # Recent Posts Section
 --------------------------------------------------------------*/
@@ -2594,6 +2603,17 @@ section,
   background-color: color-mix(in srgb, var(--background-color), var(--surface-color) 50%);
 }
 
+.sponsors .row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.sponsors .col-lg-4,
+.sponsors .col-md-6 {
+  display: flex;
+}
+
 .sponsors .sponsor-item {
   background-color: var(--surface-color);
   padding: 40px 30px;
@@ -2602,7 +2622,7 @@ section,
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
   position: relative;
-  width: 40vw;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -2657,7 +2677,14 @@ section,
 }
 
 /* 반응형 디자인 */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  /* 태블릿: 2열로 표시, 동일한 너비 */
+  .sponsors .col-lg-4,
+  .sponsors .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
   .sponsors .sponsor-item {
     padding: 30px 20px;
   }
@@ -2675,13 +2702,27 @@ section,
   }
 }
 
-/* 스폰서가 홀수개일 때 중앙 정렬 */
 @media (min-width: 992px) {
-  .sponsors .row[data-sponsors-count="1"] .col-lg-4 {
-    max-width: 400px;
-  }
-  
-  .sponsors .row[data-sponsors-count="3"] .col-lg-4:last-child {
-    max-width: 400px;
+  /* 데스크톱: 2열로 표시, 동일한 너비 */
+  .sponsors .col-lg-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
+
+/* 모바일에서 스폰서 카드 좌우 꽉 차게 */
+@media (max-width: 767px) {
+  .sponsors .col-lg-4,
+  .sponsors .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .sponsors .sponsor-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
