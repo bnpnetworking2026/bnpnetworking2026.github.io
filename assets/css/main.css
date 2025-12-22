@@ -2810,3 +2810,129 @@ section,
   }
 }
 
+
+/*--------------------------------------------------------------
+# Call for Contributions Section
+--------------------------------------------------------------*/
+.call-for-contributions {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+}
+
+.call-for-contributions .contribution-box {
+  background-color: var(--surface-color);
+  padding: 50px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.call-for-contributions .contribution-box:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.call-for-contributions .contribution-box .icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.call-for-contributions .contribution-box .icon-box i {
+  color: var(--accent-color);
+  font-size: 28px;
+  line-height: 0;
+}
+
+.call-for-contributions .contribution-box h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--heading-color);
+}
+
+.call-for-contributions .contribution-box p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--default-color);
+  margin-bottom: 25px;
+}
+
+.call-for-contributions .contribution-box p:last-of-type {
+  margin-bottom: 30px;
+}
+
+.call-for-contributions .btn-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 40px;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-family: var(--heading-font);
+}
+
+.call-for-contributions .btn-submit i {
+  margin-right: 10px;
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.call-for-contributions .btn-submit:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+  color: var(--contrast-color);
+  transform: translateY(-2px);
+}
+
+.call-for-contributions .btn-submit:hover i {
+  transform: translateX(3px);
+}
+
+.call-for-contributions .deadline-info {
+  margin-top: 25px;
+  padding: 15px 25px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 97%);
+  border-left: 3px solid var(--accent-color);
+  border-radius: 5px;
+}
+
+.call-for-contributions .deadline-info p {
+  margin: 0;
+  color: var(--default-color);
+  font-size: 14px;
+}
+
+.call-for-contributions .deadline-info strong {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .call-for-contributions .contribution-box {
+    padding: 35px 25px;
+  }
+
+  .call-for-contributions .contribution-box h3 {
+    font-size: 22px;
+  }
+
+  .call-for-contributions .contribution-box p {
+    font-size: 15px;
+  }
+
+  .call-for-contributions .btn-submit {
+    padding: 12px 30px;
+    font-size: 15px;
+  }
+}
