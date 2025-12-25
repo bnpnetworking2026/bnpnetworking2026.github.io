@@ -46,3 +46,10 @@ The Bayesian Nonparametric Networking Workshop has been held biennially since it
 This workshop is co-hosted by:
 - **Korean Statistical Society (KSS)**
 - **Nonparametrics Section of International Society of Bayesian Analysis (ISBA)**
+
+
+## 🙌 Credits
+
+Website developed by [Gyeongmin Park](https://github.com/DavidPark9830) (Kyungpook National University)
+- GitHub: [@DavidPark9830](https://github.com/DavidPark9830)
+- LinkedIn: [Gyeongmin Park](https://www.linkedin.com/in/davidpark0182)
