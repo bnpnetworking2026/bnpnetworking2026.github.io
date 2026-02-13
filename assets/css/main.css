@@ -2973,13 +2973,97 @@ section,
 # Registration Section (New Simplified Version)
 --------------------------------------------------------------*/
 .pricing .registration-content {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.pricing .registration-info {
+  margin-bottom: 40px;
+}
+
+.pricing .registration-info .row {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing .info-box {
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing .info-box:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.pricing .info-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.pricing .info-header i {
+  font-size: 28px;
+  color: var(--accent-color);
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.pricing .info-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--heading-color);
+  line-height: 1.3;
+}
+
+.pricing .info-box p {
+  margin: 0;
+  line-height: 1.7;
+  color: var(--default-color);
+  font-size: 15px;
+  flex: 1;
+}
+
+.pricing .info-box strong {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.pricing .info-box a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.pricing .info-box a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  text-decoration: underline;
+}
+
+.pricing .info-box.cancellation-policy {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  border-left: 4px solid var(--accent-color);
+}
+
+.pricing .itinerary-link {
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 .pricing .registration-button-wrapper {
   text-align: center;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  padding-top: 40px;
+  border-top: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .pricing .btn-register {
@@ -3010,79 +3094,17 @@ section,
   box-shadow: 0 6px 20px rgba(0, 82, 184, 0.4);
 }
 
-.pricing .registration-info {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.pricing .info-box {
-  background-color: var(--surface-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease-in-out;
-}
-
-.pricing .info-box:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
-}
-
-.pricing .info-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.pricing .info-header i {
-  font-size: 28px;
-  color: var(--accent-color);
-  margin-right: 15px;
-}
-
-.pricing .info-header h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0;
-  color: var(--heading-color);
-}
-
-.pricing .info-box p {
-  margin: 0;
-  line-height: 1.7;
-  color: var(--default-color);
-}
-
-.pricing .info-box strong {
-  color: var(--heading-color);
-  font-weight: 600;
-}
-
-.pricing .info-box a {
-  color: var(--accent-color);
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease-in-out;
-}
-
-.pricing .info-box a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 20%);
-  text-decoration: underline;
-}
-
-.pricing .info-box.cancellation-policy {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
-  border-left: 4px solid var(--accent-color);
-}
-
-.pricing .itinerary-link {
-  font-weight: 600;
-  text-decoration: underline;
-}
-
 /* 반응형 디자인 */
+@media (max-width: 991px) {
+  .pricing .info-box {
+    margin-bottom: 20px;
+  }
+  
+  .pricing .col-lg-4:last-child .info-box {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .pricing .btn-register {
     width: 100%;
@@ -3091,17 +3113,35 @@ section,
   }
 
   .pricing .info-box {
-    padding: 20px;
+    padding: 25px 20px;
   }
 
   .pricing .info-header h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .pricing .info-header i {
     font-size: 24px;
+    margin-right: 12px;
+  }
+  
+  .pricing .info-box p {
+    font-size: 14px;
+  }
+  
+  .pricing .registration-button-wrapper {
+    margin-top: 30px;
+    padding-top: 30px;
   }
 }
+
+/* 3열 균등 배치 보장 */
+@media (min-width: 992px) {
+  .pricing .registration-info .col-lg-4 {
+    display: flex;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Announcements Section
