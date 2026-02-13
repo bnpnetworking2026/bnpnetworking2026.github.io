@@ -2968,3 +2968,290 @@ section,
     padding: 12px 30px;
   }
 }
+
+/*--------------------------------------------------------------
+# Registration Section (New Simplified Version)
+--------------------------------------------------------------*/
+.pricing .registration-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pricing .registration-button-wrapper {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pricing .btn-register {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 50px;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-family: var(--heading-font);
+  box-shadow: 0 4px 15px rgba(0, 82, 184, 0.3);
+}
+
+.pricing .btn-register i {
+  margin-right: 12px;
+  font-size: 22px;
+}
+
+.pricing .btn-register:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+  color: var(--contrast-color);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 82, 184, 0.4);
+}
+
+.pricing .registration-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.pricing .info-box {
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.pricing .info-box:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.pricing .info-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.pricing .info-header i {
+  font-size: 28px;
+  color: var(--accent-color);
+  margin-right: 15px;
+}
+
+.pricing .info-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--heading-color);
+}
+
+.pricing .info-box p {
+  margin: 0;
+  line-height: 1.7;
+  color: var(--default-color);
+}
+
+.pricing .info-box strong {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.pricing .info-box a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.pricing .info-box a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  text-decoration: underline;
+}
+
+.pricing .info-box.cancellation-policy {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  border-left: 4px solid var(--accent-color);
+}
+
+.pricing .itinerary-link {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .pricing .btn-register {
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+
+  .pricing .info-box {
+    padding: 20px;
+  }
+
+  .pricing .info-header h3 {
+    font-size: 18px;
+  }
+
+  .pricing .info-header i {
+    font-size: 24px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Announcements Section
+--------------------------------------------------------------*/
+.announcements {
+  background-color: var(--background-color);
+}
+
+.announcements .announcement-item {
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 10px;
+  padding: 35px;
+  height: 100%;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.announcements .announcement-item:hover {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+}
+
+.announcements .announcement-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.announcements .announcement-icon i {
+  font-size: 32px;
+  color: var(--accent-color);
+}
+
+.announcements .announcement-content {
+  flex: 1;
+}
+
+.announcements .announcement-content h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--heading-color);
+}
+
+.announcements .announcement-content p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+  color: var(--default-color);
+}
+
+.announcements .announcement-content p:last-child {
+  margin-bottom: 0;
+}
+
+.announcements .announcement-content strong {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.announcements .contact-info {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.announcements .contact-info p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.announcements .contact-info a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.announcements .contact-info a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  text-decoration: underline;
+}
+
+/* Coming Soon Badge */
+.announcements .coming-soon-badge {
+  display: inline-block;
+  margin: 15px 0 20px 0;
+}
+
+.announcements .coming-soon-badge span {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #6c63ff 30%));
+  color: var(--contrast-color);
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 3px 10px rgba(0, 82, 184, 0.3);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+.announcements .announcement-item.coming-soon {
+  background: linear-gradient(135deg, 
+    var(--surface-color) 0%, 
+    color-mix(in srgb, var(--accent-color), transparent 97%) 100%);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 991px) {
+  .announcements .announcement-item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .announcements .announcement-item {
+    padding: 25px;
+  }
+
+  .announcements .announcement-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+
+  .announcements .announcement-icon i {
+    font-size: 28px;
+  }
+
+  .announcements .announcement-content h3 {
+    font-size: 20px;
+  }
+}
