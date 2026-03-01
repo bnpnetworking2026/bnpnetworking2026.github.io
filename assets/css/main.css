@@ -3548,3 +3548,105 @@ section,
     font-size: 20px;
   }
 }
+
+/* --------------------------------------------------------------
+# Official Conference Hotel (Announcement) - Details
+-------------------------------------------------------------- */
+
+.announcements .announcement-item.hotel-announcement {
+  background: linear-gradient(135deg,
+    var(--surface-color) 0%,
+    color-mix(in srgb, var(--accent-color), transparent 96%) 100%);
+}
+
+.announcements .hotel-name {
+  margin: 10px 0 12px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.announcements .hotel-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px 0;
+}
+
+.announcements .hotel-meta li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 6px 0;
+}
+
+.announcements .hotel-meta li i {
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--accent-color);
+  margin-top: 2px;
+}
+
+.announcements .hotel-note {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  margin: 8px 0 16px 0;
+}
+
+.announcements .hotel-note i {
+  color: color-mix(in srgb, var(--accent-color), #ff6b6b 25%);
+  font-size: 18px;
+  margin-top: 1px;
+}
+
+.announcements .hotel-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.announcements .btn-hotel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.announcements .btn-hotel:hover {
+  background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+  color: var(--contrast-color);
+}
+
+.announcements .limited-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--heading-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+@media (max-width: 768px) {
+  .announcements .hotel-name {
+    font-size: 16px;
+  }
+
+  .announcements .btn-hotel {
+    width: 100%;
+    justify-content: center;
+  }
+}
