@@ -3626,20 +3626,6 @@ section,
   color: var(--contrast-color);
 }
 
-.announcements .limited-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 12px;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.2px;
-  color: var(--heading-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 88%);
-  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
-}
-
 @media (max-width: 768px) {
   .announcements .hotel-name {
     font-size: 16px;
