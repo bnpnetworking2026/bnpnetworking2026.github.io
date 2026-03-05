@@ -2927,6 +2927,38 @@ section,
   transform: translateX(3px);
 }
 
+/* Disabled submit button (deadline passed) */
+.call-for-contributions .btn-submit.is-disabled {
+  background-color: #8a8f98;   /* 기존 #444 → 밝은 회색 */
+  cursor: not-allowed;
+  opacity: 0.95;
+  box-shadow: none;
+}
+
+.call-for-contributions .btn-submit.is-disabled:hover {
+  background-color: #8a8f98;
+  transform: none;
+}
+
+.call-for-contributions .btn-submit.is-disabled:hover {
+  background-color: #8a8f98;
+  transform: none;
+}
+
+/* Poster still accepted via email (alert note) */
+.call-for-contributions .important-note.important-note--alert {
+  background-color: #fce8e8;
+  border-left: 4px solid #dc3545;
+  margin-top: -20px; /* optional: Important Policy랑 간격 조정 */
+  margin-bottom: 30px;
+}
+
+.call-for-contributions .important-note.important-note--alert a {
+  color: #b02a37;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 .call-for-contributions .contact-info {
   text-align: center;
   margin-top: 30px;
@@ -3624,6 +3656,20 @@ section,
 .announcements .btn-hotel:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
   color: var(--contrast-color);
+}
+
+.announcements .limited-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--heading-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 @media (max-width: 768px) {
