@@ -3529,6 +3529,21 @@ section,
   text-decoration: underline;
 }
 
+.announcements .poster-service-list {
+  margin: 8px 0 10px 0;
+  padding-left: 20px;
+}
+
+.announcements .poster-service-list li {
+  margin-bottom: 8px;
+  line-height: 1.65;
+  color: var(--default-color);
+}
+
+.announcements .poster-service-list li:last-child {
+  margin-bottom: 0;
+}
+
 /* Coming Soon Badge */
 .announcements .coming-soon-badge {
   display: inline-block;
