@@ -487,6 +487,11 @@ h6 {
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
+.footer .site-credit {
+  display: block;
+  margin-top: 8px;
+}
+
 .footer .credits {
   font-size: 13px;
   padding-top: 5px;
@@ -2699,6 +2704,10 @@ section,
   background-color: color-mix(in srgb, var(--background-color), var(--surface-color) 50%);
 }
 
+.sponsors>.section-title {
+  padding-bottom: 24px;
+}
+
 .sponsors .row {
   display: flex;
   justify-content: center;
@@ -2706,8 +2715,13 @@ section,
 }
 
 .sponsors .col-lg-4,
+.sponsors .col-lg-6,
 .sponsors .col-md-6 {
   display: flex;
+}
+
+.sponsors .sponsors-secondary-row {
+  margin-top: 44px;
 }
 
 .sponsors .sponsor-item {
@@ -2733,9 +2747,20 @@ section,
 
 .sponsors .sponsor-logo {
   height: 50px;
+  max-width: 100%;
   margin-bottom: 20px;
   transition: all 0.3s ease-in-out;
   object-fit: contain;
+}
+
+.sponsors .sponsor-logo-square {
+  height: 68px;
+}
+
+.sponsors .sponsor-logo-wide {
+  width: min(100%, 340px);
+  height: auto;
+  max-height: 54px;
 }
 
 .sponsors .sponsor-item:hover .sponsor-logo {
@@ -2754,6 +2779,28 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin-bottom: 20px;
   line-height: 1.4;
+}
+
+.sponsors .sponsor-group {
+  width: 100%;
+}
+
+.sponsors .sponsor-subtitle {
+  padding-bottom: 24px;
+  text-align: left;
+}
+
+.sponsors .sponsor-subtitle h2,
+.sponsors .sponsor-subtitle p {
+  text-align: left;
+}
+
+.sponsors .sponsor-subtitle p {
+  font-size: 28px;
+}
+
+.sponsors .sponsor-group .sponsor-item {
+  min-height: 230px;
 }
 
 .sponsors .sponsor-link {
@@ -2776,6 +2823,7 @@ section,
 @media (min-width: 768px) and (max-width: 991px) {
   /* 태블릿: 2열로 표시, 동일한 너비 */
   .sponsors .col-lg-4,
+  .sponsors .col-lg-6,
   .sponsors .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%;
@@ -2787,6 +2835,10 @@ section,
   
   .sponsors .sponsor-logo {
     max-height: 60px;
+  }
+
+  .sponsors .sponsor-logo-wide {
+    width: min(100%, 300px);
   }
   
   .sponsors .sponsor-item h4 {
@@ -2808,10 +2860,11 @@ section,
 
 /* 모바일에서 스폰서 카드 좌우 꽉 차게 */
 @media (max-width: 767px) {
-  .sponsors .col-lg-4,
-  .sponsors .col-md-6 {
-    flex: 0 0 100%;
-    max-width: 100%;
+.sponsors .col-lg-4,
+.sponsors .col-lg-6,
+.sponsors .col-md-6 {
+  flex: 0 0 100%;
+  max-width: 100%;
     padding-left: 15px;
     padding-right: 15px;
   }
