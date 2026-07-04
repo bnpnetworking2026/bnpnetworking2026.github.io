@@ -2754,6 +2754,24 @@ section,
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.sponsors .sponsor-card-grid-five {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.sponsors .sponsor-card-grid-five .sponsor-item {
+  grid-column: span 2;
+  padding: 36px 28px;
+}
+
+.sponsors .sponsor-card-grid-five .sponsor-item:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.sponsors .sponsor-card-grid-five .sponsor-item:nth-child(5) {
+  grid-column: 4 / span 2;
+}
+
 .sponsors .sponsor-item {
   background-color: var(--surface-color);
   padding: 36px 28px;
@@ -2783,6 +2801,11 @@ section,
   margin-bottom: 20px;
   transition: all 0.3s ease-in-out;
   object-fit: contain;
+}
+
+.sponsors .sponsor-logo-emphasis {
+  width: min(280px, calc(100% - 24px));
+  height: 48px;
 }
 
 .sponsors .sponsor-logo-medium {
@@ -2831,8 +2854,15 @@ section,
 
 /* 반응형 디자인 */
 @media (max-width: 991px) {
-  .sponsors .sponsor-card-grid-three {
+  .sponsors .sponsor-card-grid-three,
+  .sponsors .sponsor-card-grid-five {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sponsors .sponsor-card-grid-five .sponsor-item,
+  .sponsors .sponsor-card-grid-five .sponsor-item:nth-child(4),
+  .sponsors .sponsor-card-grid-five .sponsor-item:nth-child(5) {
+    grid-column: auto;
   }
 
   .sponsors .sponsor-item {
@@ -2842,6 +2872,11 @@ section,
   .sponsors .sponsor-logo {
     width: min(235px, calc(100% - 36px));
     height: 40px;
+  }
+
+  .sponsors .sponsor-logo-emphasis {
+    width: min(260px, calc(100% - 24px));
+    height: 46px;
   }
 
   .sponsors .sponsor-logo-medium {
@@ -2861,12 +2896,17 @@ section,
   .sponsors .sponsor-item p {
     font-size: 13px;
   }
+
+  .sponsors .sponsor-card-grid-five .sponsor-item p {
+    font-size: 13px;
+  }
 }
 
 /* 모바일에서 스폰서 카드 좌우 꽉 차게 */
 @media (max-width: 767px) {
   .sponsors .sponsor-card-grid-two,
-  .sponsors .sponsor-card-grid-three {
+  .sponsors .sponsor-card-grid-three,
+  .sponsors .sponsor-card-grid-five {
     grid-template-columns: 1fr;
   }
 
@@ -2886,6 +2926,11 @@ section,
   .sponsors .sponsor-logo {
     width: min(220px, calc(100% - 36px));
     height: 38px;
+  }
+
+  .sponsors .sponsor-logo-emphasis {
+    width: min(245px, calc(100% - 24px));
+    height: 44px;
   }
 
   .sponsors .sponsor-logo-medium {
